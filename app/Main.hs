@@ -1,6 +1,9 @@
+-- haskell sample script
 module Main where
 
-import Lib
+-- import Lib
 
-main :: IO ()
-main = someFunc
+-- main :: IO ()
+main = do
+    print "Hello, Haskell!"
+    print "hoge hoge"
