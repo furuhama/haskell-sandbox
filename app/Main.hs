@@ -9,6 +9,10 @@ head' :: [a] -> a
 head' [] = error "List is Empty."
 head' (x:xs) = x
 
+fact :: Int -> Int
+fact 0 = 1
+fact n = n * fact (n-1)
+
 main = do
     -- definition of local variables
     let b = 10
@@ -21,3 +25,4 @@ main = do
 
     if b == 1 then print "hoge" else print "fuga"
 
+    print (fact 10)
