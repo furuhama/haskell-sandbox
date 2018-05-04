@@ -6,6 +6,6 @@ if [ $# -ge 2 ]
     echo "An error occured. Too many args."
 else
   # run single .hs file
-  stack exec runghc $1
+  stack runghc $1
 fi
 
