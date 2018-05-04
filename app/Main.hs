@@ -28,8 +28,9 @@ main = do
 
     print (head' ls)
 
-    if b == 1 then print "hoge" else print "fuga"
+    if b == 1 then print "b is 1"
+              else print "b is not 1"
 
     print (fact 10)
 
-    print(fib 10)
+    print (fib 10)
