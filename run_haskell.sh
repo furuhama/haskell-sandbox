@@ -1,9 +1,8 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
-# return error when it gets too many args...
-if [ $# -ge 2 ]
-  then
-    echo "An error occured. Too many args."
+# return an error when it gets two or more arguments
+if [ $# -ge 2 ]; then
+  echo "An error occured. Too many args."
 else
   # run single .hs file
   stack runghc $1
