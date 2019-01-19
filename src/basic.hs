@@ -1,4 +1,4 @@
--- baby.hs
+-- basic.hs
 
 doubleMe x = x + x
 
