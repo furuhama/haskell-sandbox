@@ -69,3 +69,9 @@ ls5 = [x*y | x <- [2,5,10], y <- [8,10,11], x*y > 50] -- [55,80,100,110]
 -- Original length
 -- `_` operator drops its value
 length' xs = sum [1 | _ <- xs]
+
+-- Remove Upper case characters from string(character list)
+removeNonUppercase st = [ c | c <- st, c `elem` ['A'..'Z']]
+
+-- Tuples
+zip1 = zip [1 .. 5] ["one", "two", "three", "four", "five"] -- [(1,"one"),(2,"two"),(3,"three"),(4,"four"),(5,"five")]
