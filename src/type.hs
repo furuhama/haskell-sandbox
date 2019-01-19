@@ -13,3 +13,9 @@ fact n = product [1..n]
 -- Integer is non limited integer
 fact' :: Integer -> Integer
 fact' n = product [1..n]
+
+circ :: Float -> Float
+circ r = 2 * pi * r
+
+circ' :: Double -> Double
+circ' r = 2 * pi * r
