@@ -5,7 +5,7 @@ Play with Haskell
 use `build_haskell.sh`
 when you want to build a single .hs file
 
-use `run_haskell.sh`
+use `stack runghc`
 when you want to build & run a single .hs file
 
 use `stack build`, `stack exec haskell-sandbox-exe`
