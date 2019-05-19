@@ -5,7 +5,7 @@ Play with Haskell
 use `stack runghc`
 when you want to build & run a single .hs file
 
-use `stack build`, `stack exec haskell-sandbox-exe`
+use `stack run`
 when you want to run Main.hs with Modules
 
 use `stack ghci`
