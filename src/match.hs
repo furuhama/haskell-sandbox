@@ -60,9 +60,19 @@ cylinder r h =
         topArea = pi * r ^2
     in  sideArea + 2 * topArea
 
+-- [let sq x = x * x in (sq 5, sq 3, sq 2)]
+-- #=> [(25, 9, 4)]
+
 -- Case expression
 -- (pattern matching is syntax sugar for case expression)
 descList :: [a] -> String
-descList xs = case xs of [] -> "empty"
-                         [x] -> "a singleton list"
-                         xs -> "a longer list"
+descList xs = "The list is " ++ case xs of [] -> "empty"
+                                           [x] -> "a singleton list"
+                                           xs -> "a longer list"
+
+-- same function in pattern matching
+descList' :: [a] -> String
+descList' xs = "The list is " ++ what xs
+    where what [] = "empty."
+          what [x] = "a singleton list."
+          what xs = "a longer list."
