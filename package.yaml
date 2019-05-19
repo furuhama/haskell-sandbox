@@ -4,7 +4,7 @@ github:              "furuhama/haskell-sandbox"
 license:             BSD3
 author:              "furuhama yusuke"
 maintainer:          "furuhama@example.com"
-copyright:           "2018 furuhama"
+copyright:           "2019 furuhama"
 
 extra-source-files:
 - README.md
