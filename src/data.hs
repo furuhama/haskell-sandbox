@@ -2,7 +2,7 @@
 
 -- Day
 data Day = Sunday | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday
-    deriving (Show, Read)
+  deriving (Show, Read)
 
 -- Point and Triangle
 data Point = Point (Double, Double) deriving (Show, Read)
@@ -10,7 +10,7 @@ data Point = Point (Double, Double) deriving (Show, Read)
 data Triangle = Triangle Point Point Point deriving (Show, Read) -- the gravity center & two vertexes
 
 data Shape = Circle Float Float Float | Rectangle Float Float Float Float
-    deriving Show
+  deriving (Show)
 
 surface :: Shape -> Float
 surface (Circle _ _ r) = pi * r ^ 2
